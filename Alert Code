@@ -1,0 +1,14 @@
+Write a program in swift programming language in which when a user moves a device there should be a sound alert when the user's device reaches the new position.
+
+Create a UNLocationNotificatiouTrIgger object when you want to schedule the delivery of a local notification when the device enters or leaves a specific geographic region. The system limits the number of location-based triggers that may be scheduled at the same time. Important 
+Before scheduling any notifications using this trigger, your app must have authorization to use Core Location and must have when-in-use (Because the system actually monitors the regions, you don't need to request always permissions for your app.) For Information about bow to request authorization, see Requesting When-In-Use Authorization. 
+When configuring the region, use the notifvOnEntr, and notifvOnExIc properties to specify whether you want notifications to be delivered on entry, on exit, or both. Listing 1 shows the creation of a trigger that tires only once when the user's device enters a circular region with a 2-kilometer radius. 
+Lisdngl 
+Creating a location-based trigger let center = CLLonationCoardinate2D(latitudei 3n.335000, longitude: -122.009201) let region = CLCircularRegionfeenter: center, radius: 2000.0, identifier: "Headquarhrs") region.notifyOnEntry — true regionatotifyOnExit = false let trigger =IINLocatiouNotilleationTrIgger(reglon: region, repeats: false) 
+Region-based notifications aren't always triggered immediately when the edge of the boundary is crossed. The system applies heuristics to ensure that the boundary crossing represents a deliberate event and is not the result of spurious location daM. For more information about the heuristics that are applied, see Monitoring the User's Proximity to Geographic Regions. 
+Determine User's Current Location Example in Swift In this Swift code example we will learn how to determine user's current location using CLLocationManager and CLLocationManagerDelegate. The code example below will cover: 
+
+
+• Request user's pemission for your app to always be able to read uscr's location. Optionality you could use requestWhenloUseAuthorizatiou0 instead of requestAlwaysAutborinationo 
+• Update projects Info.plist with String values for NSLocationAlwayaUsegeDescription and NSLocationWhealoUseUsageDescription alert dialogs • Implement locationManager didUpdateLocations function to continuously listen for location updates and call stopUpdatiogLonation0 to stop listening for location updates 
+• Get user's current location latitude and longitude 
