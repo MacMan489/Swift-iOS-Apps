@@ -1,0 +1,39 @@
+Write a program that
+Stores a person age
+Stores the earths gravity as 9.8
+
+
+
+In the swift programming language we can use the let and var keywords used to declare the variables and the constants respectively.
+
+var keyword is used to declare the variable. The Datatypes avvailable in swift programing language is:
+
+bool (True or False),
+
+Integer(Int8, UInt),
+
+float,
+
+double,
+
+character,
+
+String.
+
+a).Declaring age variable (By assuming it as int):
+
+var age: Int=21
+
+print(age)
+
+b).Declare a constant earth gravity (By Taking it as Float you can take Double also):
+
+let earth_gravity:Float=9.8
+
+print(earth_gravity)
+
+The difference between variable and constant is a variable can be updated where as the constant which could not be updated once it had assigned.
+
+So, Finally We had declared age as variable using var keyword and earcth gravity as Constant which constant using let keyword.
+
+We can use int8 or UInt for age and Double for earth gravity.
