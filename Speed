@@ -1,0 +1,129 @@
+Given the following:
+
+var speed : Double
+var parkedDriver = 0, slowDriver = 0, fastDriver = 0
+Assume that the variable speed will be assigned a value from 0 to 100. Write one if/else-ifstatement that will:
+
+Increment BY 1 the parkedDriver variable if the speed is equal to 0
+
+Increment BY 1 the slowDriver variable if the speed is less than 55
+
+Increment BY 1 the fastDriver variable if the speed is greater than or equal to 55
+
+temperatures[ ] is an array of type double that has been declared and initialized threshold is a variable of type double 
+that has been declared and initialized Write Swift code to Count the number of values in array temperatures that are greater 
+than threshold, and output the count to the console
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Program 1: Single if/else if statement to Determine the Driver's Speed
+
+/*An variable named speed in which an value between 0-100 can be assigned*/
+
+var speed: Double
+
+/*Three variables parkedDriver,slowDriver,fastDriver to determine the stype of driver based on the speed*/
+
+var parkedDriver=0,slowDriver=0,fastDriver=0
+
+/*Checking if the driver parked the vehicle*/
+
+if(speed==0)
+
+{
+
+parkedDriver+=1
+
+}
+
+/*Checking if the driver is driving the vehicle slowly*/
+
+else if(speed>=0 and speed<55)
+
+{
+
+slowDriver+=1
+
+}
+
+/*Checking if the driver is driving the vehicle fastle*/
+
+else if(speed>=55)
+
+{
+
+fastDriver+=1
+
+}
+
+Progam 2: Counting the number of values in the temperature array that are greater than treshold
+
+/*An array of doubles named temperatures to store the values*/
+
+var temperatures: [Double] = []
+
+/*An variable of type double, called treshold */
+
+var treshold = Double(48)
+
+/*Inserting values into the temperatures*/
+
+for i in 1...10
+
+{
+
+temperatures.append(Double(i*10))
+
+}
+
+/*Printing the temperature array onto the console*/
+
+print("The values in the temperature array are:\n")
+
+print(temperatures)
+
+print("\n")
+
+/*An variable named count to keep track of the number of temperature values in the array that are greater than the treshold value*/
+
+var count=0
+
+/*An loop to iterate over the temperatures array*/
+
+for temp in temperatures
+
+{
+
+/*Checking whether an temperature value is greater than treshold variable or not*/
+
+if(temp>treshold)
+
+{
+
+/*Updating the count variable*/
+
+count=count+1
+
+}
+
+}
+
+/*Printing the count variable onto the console*/
+
+print("Number of values in array temperature that are greater than treshold are: "+String(count))
