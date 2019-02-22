@@ -1,0 +1,36 @@
+temperatures[ ] is an array of type double that has been declared and initialized threshold is a variable of type 
+double that has been declared and initialized Write Swift code to Count the number of values in array temperatures 
+that are greater than threshold, and output the count to the console.
+
+
+
+
+var Temperatures = [Double]() //: declared an empty array of type double
+var Threshold:Double //: initialized threshold is a variable of type double
+var Cnt:Int //: Cnt is an integer variable to Count the number of values in array temperatures that are greater than threshold
+
+Threshold = 40 //: Threshold value
+Cnt = 0 //: Intial value of count
+Temperatures.append(67.4) //: From this line adding Double values to Temperatures array
+Temperatures.append(45.2)
+Temperatures.append(23.9)
+Temperatures.append(57.4)
+Temperatures.append(35.8)
+Temperatures.append(78.34)
+Temperatures.append(20.78)
+Temperatures.append(56.23)
+Temperatures.append(44.12)
+Temperatures.append(55.09)
+Temperatures.append(100.56)
+Temperatures.append(24.45)
+var i = 0 //: i is an index varaible to access values of an array Temperatures
+while i < Temperatures.count  
+{
+if (Temperatures[i] > Threshold )
+{
+Cnt += 1 //: Incrment the count value by 1 if temperature above the threshold value
+}
+i += 1
+}
+
+print(Cnt)
