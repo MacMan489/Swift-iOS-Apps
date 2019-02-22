@@ -1,0 +1,16 @@
+1. Count the number of Lexemes in each line? Create a chart representing the tokens that may 
+represent each lexeme. State the language you are assuming (currently Swift code)
+
+if,\;let,\;ad,\;adList,\;=,\;quad,\;position,\;return\;quad,\{,\;\},\;.
+lexeme-count
+if-1
+let-2
+ad-2
+adList-1
+.-2
+first-1
+position-1
+return-1
+quad-2
+\{-1
+\}-1
